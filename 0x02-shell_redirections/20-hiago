@@ -1,0 +1,2 @@
+#!/bin/bash
+def remove_c(input_string):
