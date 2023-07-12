@@ -1,11 +1,2 @@
 #!/bin/bash
-
-# Check if /action directory already exists in PATH
-if [[ ":$PATH:" == *":/action:"* ]]; then
-  echo "/action is already in the PATH."
-else
-  # Append /action to the PATH variable
-  echo 'export PATH="$PATH:/action"' >> ~/.bashrc
-  echo "/action has been added to the PATH."
-  source ~/.bashrc
-fi
+export PATH=$PATH:/action

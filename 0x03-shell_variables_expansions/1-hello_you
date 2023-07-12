@@ -1,7 +1,2 @@
 #!/bin/bash
-
-# Get the current Linux user
-current_user=$(whoami)
-
-# Print the greeting
-echo "Hello $current_user!"
+echo "hello $USER"
